@@ -1,0 +1,49 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  background-color: black;
+  background-image: url("./img/navBack.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.burgerMenu {
+  max-width: 30px;
+  max-height: 30px;
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.navBar img {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+
+.searchImg {
+border-radius: 50%;
+}
+
+.navBar input {
+  width: 100%;
+  margin-left: 20px;
+  border-radius:  10px 0 0 10px;
+  border: none;
+  height: 30px;
+  padding: 0;
+  padding-left: 5px;
+}
+
+
+
+.searchIcon {
+  max-width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 0 10px 10px 0;
+  margin-right: 10px;
+  background-color: white;
+}
