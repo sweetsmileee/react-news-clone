@@ -4,6 +4,7 @@ import SidebarCSS from './components/SidebarCSS.css'
 
 
 export default props => {
+   <SidebarCss/>
     return(
         <Menu>
             <a className="menu-item" href="/">
