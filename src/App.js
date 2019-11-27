@@ -1,26 +1,18 @@
 import React from 'react';
-import Burger from './img/burger.png'
+import Burger from './components/img/burger.png'
+import Search from './img/search.png'
+import NavBar from './components/NavBar'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <nav className="navBar">
-        
-        
-        <div className="burgerMenu">
-          <img src={Burger} />
-            {/* <ul>
+      <NavBar burger={Burger} search={Search}/>
+          {/* <ul>
               {navOptions.map(item, i){
                 return <a href="" ><li className=item.name>{item.name}</li></a>
               }*/}
-          </div>
-
-          
-        <input type="text" placeholder="Search"></input>
-        <img src="magnifyingGlass" />
-
-      </nav>
+  
       <div className="banner">
       <div className="carouselStory">
             <div>
@@ -40,3 +32,8 @@ function App() {
 }
 
 export default App;
+      
+
+
+          
+       
