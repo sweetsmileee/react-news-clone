@@ -1,6 +1,7 @@
 import React from 'react';
 import Burger from './img/burger.png'
 import Carousel from './component/Carousel'
+import Sidebar from './component/Sidebar'
 import './App.css';
 
 function App() {
