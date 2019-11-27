@@ -2,21 +2,136 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 30px;
+  background-color: black;
+  background-image: url("./img/navBack.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.App-link {
-  color: #09d3ac;
+.burgerMenu {
+  max-width: 30px;
+  max-height: 30px;
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.navBar img {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+
+.searchImg {
+border-radius: 50%;
+}
+
+.navBar input {
+  width: 100%;
+  margin-left: 20px;
+  border-radius:  10px 0 0 10px;
+  border: none;
+  height: 30px;
+  padding: 0;
+  padding-left: 5px;
+}
+
+
+
+.searchIcon {
+  max-width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 0 10px 10px 0;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.carousel1{
+  display: flex;
+}
+
+.carousel2 {
+  display: none;
+}
+
+.carousel3 {
+  display: none;
+}
+
+.arrow {
+  height: 30px;
+  width:30px;
+  position: absolute;
+  top: 140px;
+  -webkit-filter: invert();
+  transition: all 0.2s ease;
+  
+}
+
+.arrow:active{
+  transform: scale(1.1);
+}
+
+.left {
+  left: 2vw;
+}
+
+.right {
+  left: 90vw;
+}
+
+.arrow img {
+  max-width: 100%;
+}
+
+.carouselStory {
+  position: relative;
+}
+
+.containerCard {
+  height: 250px;
+  align-items: flex-end;
+}
+
+.image {
+  z-index: -1;
+  position: absolute;
+  max-height: 100%;
+  width: 100%;
+}
+
+.wrapperText {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), black 80%) ;
+  color: white;
+  padding: 10px;
+}
+
+.wrapperText p {
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.mybtn {
+  display: inline-block;
+  color: white;
+  background-color: crimson;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 5px 10px;
+}
+
+.h2class {
+  margin: 5px 10px;
+}
+
+.pclass {
+  margin: 5px 10px;
 }
