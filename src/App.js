@@ -1,5 +1,6 @@
 import React from 'react';
 import Burger from './img/burger.png'
+import Carousel from './component/Carousel'
 import './App.css';
 
 function App() {
@@ -22,15 +23,7 @@ function App() {
 
       </nav>
       <div className="banner">
-      <div className="carouselStory">
-            <div>
-              with background image
-              <div className="story">
-                <h2>Title</h2>
-                <p>story preview</p>
-              </div>
-            </div>
-        </div>
+        <Carousel />
       </div>
       <div className="stories">
           Cards of various sizes
