@@ -1,10 +1,9 @@
 import React from 'react'
 import {slide as Menu} from 'react-burger-menu';
-import SidebarCSS from './components/SidebarCSS.css'
+// need to import the css file here 
 
 
 export default props => {
-   <SidebarCss/>
     return(
         <Menu>
             <a className="menu-item" href="/">
