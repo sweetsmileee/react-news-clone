@@ -6,8 +6,8 @@
   display: flex;
   justify-content: space-between;
   height: 30px;
-  background-color: black;
-  background-image: url("./img/navBack.jpg");
+  background-color: #273c75;
+  /* background-image: url("./img/navBack.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -157,7 +157,7 @@ border-radius: 50%;
 }
 
 .bm-burger-bars {
-  background: #e84393;
+  background: #e1b12c;
   display: inline-block;
 }
 
