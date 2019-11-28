@@ -1,28 +1,18 @@
 import React from 'react';
-import Burger from './img/burger.png'
-import Carousel from './component/Carousel'
-import Sidebar from './component/Sidebar'
+import Carousel from './components/Carousel';
+import Sidebar from './components/Sidebar';
+import SearchIcon from './img/search.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <nav className="navBar">
-        
-        
-        <div className="burgerMenu">
-          <img src={Burger} />
-            {/* <ul>
-              {navOptions.map(item, i){
-                return <a href="" ><li className=item.name>{item.name}</li></a>
-              }*/}
-          </div>
-
-          
+        <Sidebar /> 
         <input type="text" placeholder="Search"></input>
-        <img src="magnifyingGlass" />
-
+        <img className="searchIcon" src={SearchIcon} />
       </nav>
+      
       <div className="banner">
         <Carousel />
       </div>

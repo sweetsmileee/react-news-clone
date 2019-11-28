@@ -76,7 +76,7 @@ export default function Carousel(props) {
                             <div className="wrapperText">
                                 <h2 className="h2class">{item.title}</h2>
                                 <p className="pclass">{item.info}</p>
-                                <a href={item.link} className="mybtn">Read More</a>
+                                <a href={item.link} target="_blank" className="mybtn">Read More</a>
                             </div>
                         </div>)}
                     )
