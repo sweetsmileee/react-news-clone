@@ -202,8 +202,13 @@ hr {
   }
 
 .headingLayout {
-  margin-left: 40px;
-  margin-bottom: -7px;
+  background-color: #273c75;
+  color: white;
+  /* margin-left: 40px; */
+  height: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px 10px 10px 10px;
 }
 
 .pattern1{
