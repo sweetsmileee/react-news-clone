@@ -222,6 +222,10 @@ hr {
   padding: 10px 10px 10px 10px;
 }
 
+.pattern {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 .pattern1{
   background-image: url(https://images.fineartamerica.com/images-medium-large-5/seamless-tropical-pattern-kotkoa.jpg);

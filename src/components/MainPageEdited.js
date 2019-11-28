@@ -12,12 +12,12 @@ function MainPage() {
       </div>
         <h2 className="headingLayout"> Science </h2>
       <div className="pattern2">
-        <Block 
-          // gridimage1 = {}
-        />
       </div>
         <h2 className="headingLayout"> Technology</h2>
       <div className="pattern3">
+        <Block 
+          // gridimage1 = {}
+        />
       </div>
         <h2 className="headingLayout"> Entertainment </h2>
       <div className="pattern4">
