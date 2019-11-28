@@ -4,6 +4,7 @@ import Block from './Block'
 function MainPage() {
   return (
     <div className="container">
+
       <h2 className="headingLayout"> Top News </h2>
         <div className="pattern1">
           <div className="imagetelmo">
@@ -30,6 +31,7 @@ function MainPage() {
         </div>
       <h2 className="headingLayout"> Health</h2>
         <div className="pattern5">
+
       </div>
     </div>
   );
