@@ -10,9 +10,13 @@
   /* background-image: url("./img/navBack.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
-
   padding-top: 5px;
   padding-bottom: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100vw;
 }
 
 .navBar img {
@@ -45,6 +49,13 @@ border-radius: 50%;
   margin-right: 10px;
   background-color: white;
 }
+
+.carousel1,
+.carousel2,
+.carousel3 {
+  margin-top: 30px;
+}
+
 
 .carousel1{
   display: flex;
@@ -202,9 +213,15 @@ hr {
   }
 
 .headingLayout {
-  margin-left: 40px;
-  margin-bottom: -7px;
+  background-color: #273c75;
+  color: white;
+  /* margin-left: 40px; */
+  height: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px 10px 10px 10px;
 }
+
 
 .pattern1{
   background-image: url(https://images.fineartamerica.com/images-medium-large-5/seamless-tropical-pattern-kotkoa.jpg);
@@ -255,4 +272,40 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+}
+
+.containerGrid {
+  display: flex;
+  margin: 0px 10px 0px 10px;
+  align-items: center;
+  background-color: #f9ca24;
+}
+
+.telmocss {
+  width: 50%;
+  height: 50%;
+  padding: 5px 5px 5px 5px;
+}
+
+.wrapperGrid {
+  margin: 1px;
+  padding: 5px;
+  font-size: 8px;
+  background-color: #f6e58d;
+}
+
+.textclass {
+  margin: 5px;
+  background-color: #f6e58d;
+}
+
+.mybtnBlock {
+  display: inline-block;
+  color: white;
+  background-color: crimson;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 5px 10px;
 }
