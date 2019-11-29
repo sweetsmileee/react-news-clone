@@ -344,22 +344,26 @@ hr {
 
 /* ARTICLE CSS */
 
-/* .containerArticle {
-} */
+.containerArticle {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .textArticle {
-  background-color: #ff6b6b;
+  background-color: #7ed6df;
   border-radius: 10%;
 }
 
 .articleH2 {
-  padding: 0px;
+  padding: 5px;
+  padding-bottom: 0px;
   margin: 5px;
   font-family: 'Righteous', cursive;
 }
 
 .articleP {
-  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   margin: 5px;
 }
 
@@ -367,7 +371,7 @@ hr {
   margin-top: 10px;
 }
 
-.mybtnArticle {
+/* .mybtnArticle {
   display: inline-block;
   color: white;
   background-color: crimson;
@@ -375,7 +379,7 @@ hr {
   border-radius: 5px;
   text-decoration: none;
   margin: 5px 10px;
-}
+} */
 
 .blackholeImage {
   height: 50%;
