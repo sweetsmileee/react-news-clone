@@ -32,10 +32,6 @@ class Popup extends React.Component {
     this.props.changePopUp();
     }
 
-    closePopup = () => {
-        this.props.closePopup();
-    }
-
   render() {  
 return (  
     <div>
