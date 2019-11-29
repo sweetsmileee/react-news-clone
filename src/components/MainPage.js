@@ -1,7 +1,7 @@
 import React from 'react';
 import Block from './Block'
 
-function MainPage() {
+function MainPage(props) {
   return (
     <div className="container">
 
@@ -19,12 +19,11 @@ function MainPage() {
         </div>
       <h2 className="headingLayout"> Technology</h2>
         <div className="pattern3 pattern">
-          <Block 
-            // gridimage1 = {}
-          />
-          <Block 
-            // gridimage1 = {}
-          />
+        {props.cards("technology").map((item, i)=>{
+          return <Block key={i} cards={item} />
+        } )
+        }
+ 
         </div>
       <h2 className="headingLayout"> Entertainment </h2>
         <div className="pattern4 pattern">
