@@ -2,6 +2,9 @@ import React from 'react';
 import Block from './Block'
 import Article from './Article'
 import Health from './Health'
+import breakfast from '../img/breakfast.jpeg'
+import balls from '../img/balls.jpg'
+import walk from '../img/walk.jpg'
 
 function MainPage(props) {
   return (
