@@ -224,17 +224,21 @@ hr {
 }
 
 .pattern {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 
-.pattern1{
-  background-image: url(https://images.fineartamerica.com/images-medium-large-5/seamless-tropical-pattern-kotkoa.jpg);
+  padding-bottom: 1rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: auto ;
+}
+
+.pattern h2 {
+  margin-bottom: 1rem;
+}
+
+.pattern1{
+  background-image: url(https://images.fineartamerica.com/images-medium-large-5/seamless-tropical-pattern-kotkoa.jpg);
   padding: 20px;
 }
 
@@ -285,38 +289,19 @@ hr {
 
 .pattern2{
   background-image: url(https://images.fineartamerica.com/images-medium-large-5/1-tropical-jungle-floral-seamless-pattern-sv-sunny.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
 }
 
 .pattern3{
   background-image: url(https://cdn5.vectorstock.com/i/1000x1000/26/94/seamless-tropical-pattern-tropical-color-vector-15202694.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
 }
 
 .pattern4{
   background-image: url(https://images.fineartamerica.com/images-medium-large-5/tropical-floral-seamless-pattern-with-ekaterina-bedoeva.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
 }
 
 .pattern5{
   background-image: url(https://cdn.dribbble.com/users/1726146/screenshots/6832676/tropical_pattern.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
+
 }
 
 .containerGrid {

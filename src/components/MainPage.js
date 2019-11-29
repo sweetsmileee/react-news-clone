@@ -17,26 +17,29 @@ function MainPage(props) {
             </div>
           </div>
         </div>
-      <h2 className="headingLayout"> Science </h2>
+      
         <div className="pattern2 pattern">
-          <Article 
+        <h2 className="headingLayout"> Science </h2>
+          <Article />
 
 
         </div>
-      <h2 className="headingLayout"> Technology</h2>
+      
         <div className="pattern3 pattern">
+        <h2 className="headingLayout"> Technology</h2>
         {props.cards("technology").map((item, i)=>{
           return <Block key={i} cards={item} />
         } )
         }
  
         </div>
-      <h2 className="headingLayout"> Entertainment </h2>
+      
         <div className="pattern4 pattern">
+        <h2 className="headingLayout"> Entertainment </h2>
         </div>
-      <h2 className="headingLayout"> Health</h2>
+      
         <div className="pattern5 pattern">
-
+        <h2 className="headingLayout"> Health</h2>
           <Health />
           <Health />
           <Health />
