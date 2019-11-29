@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
 .App {
   text-align: center;
 }
@@ -233,6 +235,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+  padding: 20px;
 }
 
 .imagetelmo {
@@ -250,6 +253,7 @@ hr {
   display: inline;
   float: left;
   margin: 0 6px 3px 0;
+  /* padding: 5px; */
 }
 
 .telmoinfo {
@@ -259,6 +263,13 @@ hr {
   color: white;
   overflow: hidden;
   max-height: 100%;
+  padding: 10px;
+}
+
+.telmoH2 {
+  padding: 0px;
+  margin: 5px;
+  font-family: 'Righteous', cursive;
 }
 
 .telmoinfo p {
@@ -279,7 +290,6 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
-  padding: 20px;
 }
 
 .pattern3{
@@ -325,13 +335,14 @@ hr {
 .wrapperGrid {
   margin: 1px;
   padding: 5px;
-  font-size: 8px;
+  font-size: 10px;
   background-color: #f6e58d;
 }
 
 .textclass {
   margin: 5px;
   background-color: #f6e58d;
+  /* font-family: 'Righteous', cursive; */
 }
 
 .mybtnBlock {
@@ -343,4 +354,78 @@ hr {
   text-decoration: none;
   font-size: 10px;
   margin: 5px 10px;
+}
+
+/* ARTICLE CSS */
+
+/* .containerArticle {
+} */
+
+.textArticle {
+  background-color: #ff6b6b;
+  border-radius: 10%;
+}
+
+.articleH2 {
+  padding: 0px;
+  margin: 5px;
+  font-family: 'Righteous', cursive;
+}
+
+.articleP {
+  padding: 0px;
+  margin: 5px;
+}
+
+.wrapperArticle {
+  margin-top: 10px;
+}
+
+.mybtnArticle {
+  display: inline-block;
+  color: white;
+  background-color: crimson;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.blackholeImage {
+  height: 50%;
+  width: 250px;
+  border-radius: 10%;
+}
+
+/* HEALTH CSS  */
+
+.containerHealth {
+ display: flex;
+ background-color: #1dd1a1;
+ margin: 5px;
+ border-radius: 10px;
+}
+
+.textHealth {
+  margin: 0px;
+  padding: 0px;
+}
+
+.healthH2 {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Righteous', cursive;
+}
+
+.healthP {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapperHealth {
+  padding: 10px;
+}
+
+.healthImage {
+  width: 120px;
 }
