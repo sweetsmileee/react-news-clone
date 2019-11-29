@@ -259,7 +259,8 @@ hr {
 .telmoinfo {
   /* display: inline; */
   /* float: right; */
-  background-color: rgb(78, 78, 153);
+  border-radius: 5%;
+  background-color: rgba(84, 160, 255,1.0);
   color: white;
   overflow: hidden;
   max-height: 100%;
@@ -362,8 +363,11 @@ hr {
 } */
 
 .textArticle {
-  background-color: #ff6b6b;
-  border-radius: 10%;
+  background-color: #7ed6df;
+  border-radius: 5%;
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .articleH2 {
@@ -381,7 +385,7 @@ hr {
   margin-top: 10px;
 }
 
-.mybtnArticle {
+/* .mybtnArticle {
   display: inline-block;
   color: white;
   background-color: crimson;
@@ -389,19 +393,23 @@ hr {
   border-radius: 5px;
   text-decoration: none;
   margin: 5px 10px;
-}
+} */
 
 .blackholeImage {
   height: 50%;
   width: 250px;
   border-radius: 10%;
+  border: 10px solid #7ed6df;
+  margin: -25px;
+  
 }
 
 /* HEALTH CSS  */
 
 .containerHealth {
  display: flex;
- background-color: #1dd1a1;
+ color: white;
+ background-color: #5f27cd;
  margin: 5px;
  border-radius: 10px;
 }
