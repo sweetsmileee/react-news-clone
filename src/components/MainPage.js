@@ -2,9 +2,13 @@ import React from 'react';
 import Block from './Block'
 import Article from './Article'
 import Health from './Health'
+import Entertainment from './Entertainment'
 import breakfast from '../img/breakfast.jpeg'
 import balls from '../img/balls.jpg'
 import walk from '../img/walk.jpg'
+import rocky from '../img/asaprock.jpeg'
+import wolf from '../img/wolfgang.jpeg'
+import pokemon from '../img/pokemon.jpg'
 
 function MainPage(props) {
   return (
@@ -12,7 +16,7 @@ function MainPage(props) {
 
       <h2 className="headingLayout"> Top News </h2>
         <div className="pattern1 pattern">
-          <div className="imagetelmo">
+          <div className="mainContainerTelmo">
             <div className="telmoinfo">
               <img className="telmoimage" src="https://i.udemycdn.com/user/200_H/12514260_337b.jpg" alt="telmo-image"></img>
               <h2 className="telmoH2">Telmo Sampaio</h2>
@@ -34,7 +38,22 @@ function MainPage(props) {
           }
         </div>
         <div className="pattern4 pattern">
-          <h2 className="headingLayout"> Entertainment </h2>
+          <h2 className="headingLayout">Entertainment </h2>
+          <Entertainment 
+              title = "A$ap Rocky new album"
+              content = "Rocky realeases the new album"
+              entertainmentimage = {rocky}
+            />
+            <Entertainment
+              title = "Golf Wang Autumn"
+              content = "Check out the latest Golf Wang Autumn collection"
+              entertainmentimage = {wolf}
+            />
+            <Entertainment
+              title = "New Pokemon Games!"
+              content = "As with all new generations of games, Sword & Shield bring a plethora of Pokémon to the fold."
+              entertainmentimage = {pokemon}
+            />
         </div>
         <div className="pattern5 pattern">
           <h2 className="headingLayout"> Health</h2>
