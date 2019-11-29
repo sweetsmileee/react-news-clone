@@ -14,7 +14,7 @@ function App() {
   const [cards, setCards] = useState(
     [
         {
-            name: "card1",
+            classN: "containerCard",
             subClass: "featured",
             img: Bullet,
             title: "Japan's Shinkansen bullet train",
@@ -23,7 +23,7 @@ function App() {
 
         }, 
         {
-            name: "card2",
+            classN: "containerCard",
             subClass: "featured",
             img: Fuji,
             title: `Mt. Fiji, Telmo's Next Goal`,
@@ -31,7 +31,7 @@ function App() {
             link: "https://telmosampaio.com/"
         },
         {
-            name: "card3",
+            classN: "containerCard",
             subClass: "featured",
             img: NightTime,
             title: "Japan's Nightlife",
@@ -57,7 +57,7 @@ const findArticles = (subclass) => {
       <Nav SearchIcon={SearchIcon} burger={Sidebar}/>
       
       <div className="banner">
-        <Carousel featured={findArticles} cards = {cards}/>
+        <Carousel cards={findArticles} cardArray = {cards}/>
       </div>
       <div className="stories">
           <MainPage />

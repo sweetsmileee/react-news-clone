@@ -6,21 +6,21 @@ import Right from '../img/rightArrow.png'
 
 export default class Carousel extends Component {
     state = {
-        featuredCards: this.props.featured("featured"),
+        carouselCards: this.props.cards("featured"),
     }
 
 
     prepL = (array) =>{
         return new Promise((resolve)=>{
         this.setState({
-            featuredCards: array
+            carouselCards: array
         })
             resolve("done")
         })
     }
     
     moveLeft = async() => {
-        let newArray = [...this.state.featuredCards];
+        let newArray = [...this.state.carouselCards];
         let moved = newArray.splice(newArray.length-1,1)
         newArray.unshift(moved[0])  
         await this.prepL(newArray);
@@ -29,14 +29,14 @@ export default class Carousel extends Component {
     prepR = (array) =>{
         return new Promise((resolve)=>{
             this.setState({
-                featuredCards: array
+                carouselCards: array
             })
             resolve("done")
         })
     }
     
     moveRight = async() => {
-        let newArray = [...this.state.featuredCards];
+        let newArray = [...this.state.carouselCards];
         let moved = newArray.splice(0,1)
         newArray.push(moved[0])  
         await this.prepR(newArray);
@@ -49,9 +49,9 @@ export default class Carousel extends Component {
         return (
             <div className="carouselStory">
 
-                {this.state.featuredCards.map((item, i)=> {
+                {this.state.carouselCards.map((item, i)=> {
                     return (
-                        <div className={"containerCard carousel" + (i+1)}>
+                        <div className={item.classN + " carousel" + (i+1)}>
                             <img className="image"src={item.img}/>
                             <div className="wrapperText">
                                 <h2 className="h2class">{item.title}</h2>
