@@ -2,6 +2,9 @@ import React from 'react';
 import Block from './Block'
 import Article from './Article'
 import Health from './Health'
+import breakfast from '../img/breakfast.jpeg'
+import balls from '../img/balls.jpg'
+import walk from '../img/walk.jpg'
 
 function MainPage() {
   return (
@@ -19,10 +22,12 @@ function MainPage() {
         </div>
       <h2 className="headingLayout"> Science </h2>
         <div className="pattern2 pattern">
-          <Article 
+          <Article >
 
+          </Article>
 
         </div>
+        
       <h2 className="headingLayout"> Technology</h2>
         <div className="pattern3 pattern">
           <Block 
@@ -38,9 +43,21 @@ function MainPage() {
       <h2 className="headingLayout"> Health</h2>
         <div className="pattern5 pattern">
 
-          <Health />
-          <Health />
-          <Health />
+          <Health 
+            title = "Burn more fat!"
+            content = "Those who exercised before breakfast burned twice the fat!"
+            healthimage = {breakfast}
+          />
+          <Health 
+            title = "A walk a day?"
+            content = "Just one slow walk a day could lower risk of early death, study finds."
+            healthimage = {walk}
+          />
+          <Health 
+            title = "Check your nuts!"
+            content = "Man raises awareness of cancer using Chritmas decorations"
+            healthimage = {balls}
+          />
         </div>
     </div>
   );
