@@ -543,6 +543,18 @@ left: 0;
 
 }
 
+@media only screen and (min-width: 1500px){
+  .containerHealth{
+  display: inline-block;
+  height: 400px;
+  width: 25%;
+  margin: 0 10px 0 10px;
+  }
+
+  .wrapperHealth{
+    padding: 0;
+  }
+}
 
 .titleBar{
   background-color: none ;
