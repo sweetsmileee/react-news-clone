@@ -8,6 +8,7 @@ import Bullet from './img/bullettrain.jpeg'
 import Fuji from './img/mtfiji.jpeg'
 import NightTime from './img/nightime.jpeg'
 import './App.css';
+import Popup from './components/Popup.js';
 
 function App() {
 
@@ -61,6 +62,9 @@ const findArticles = (subclass) => {
       </div>
       <div className="stories">
           <MainPage />
+        </div>
+        <div className="subscribetext">
+        <Popup />
         </div>
     </div>
   );

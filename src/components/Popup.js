@@ -7,9 +7,14 @@ class App extends Component {
   constructor(props){  
 super(props);  
 this.state = { showPopup: false,
-popUpText: ["Submit your email to receive special dirt on codeNation", "Thank you for submitting!"] };  
+popUpText: ["Click HERE to suscribe and receive the latest articles", "Thank you for submitting!"] };  
 
 }  
+  toggleWindow(){
+    this.setState({
+      showWindow: !this.state.Window
+    })
+  }
 
   togglePopup() {  
 this.setState({  
@@ -33,11 +38,17 @@ this.setState({
     })
   }
 
+  closeButton() {
+    this.setState({
+      closeButton: this.state.close 
+    })
+  }
+
   render() {  
 return (  
 <div>  
   <div className="Title">
-<a onClick={this.togglePopup.bind(this)}><h1 className="subscribeLink"> Click HERE to receive special dirt on codeNation </h1>  </a>
+<a onClick={this.togglePopup.bind(this)}><h1 className="subscribeLink"> Click HERE to suscribe and receive the latest articles </h1>  </a>
   </div>
 
 {this.state.showPopup ?  
