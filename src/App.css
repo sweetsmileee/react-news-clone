@@ -386,6 +386,7 @@ hr {
   border-radius: 10%;
   border: 10px solid #7ed6df;
   margin: -25px;
+  margin-bottom: 5px;
   
 }
 
@@ -393,9 +394,9 @@ hr {
 
 .containerHealth {
  display: flex;
- color: white;
- background-color: #5f27cd;
- margin: 5px;
+ color: black;
+ background-color: #c8d6e5;
+ margin: 15px;
  border-radius: 10px;
 }
 
@@ -405,13 +406,13 @@ hr {
 }
 
 .healthH2 {
-  margin: 0px;
+  margin: 10px;
   padding: 0px;
   font-family: 'Righteous', cursive;
 }
 
 .healthP {
-  margin: 0px;
+  margin: 10px;
   padding: 0px;
 }
 
@@ -421,6 +422,8 @@ hr {
 
 .healthImage {
   width: 120px;
+  margin: 10px;
+  margin-top: 20px;
 }
 
 /* ========================================================================================================================================*/
