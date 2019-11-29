@@ -432,6 +432,45 @@ hr {
   margin-top: 20px;
 }
 
+/* ENTERTAINMENT CSS */
+
+
+.containerEntertainment {
+  display: flex;
+  color: black;
+  background-color: #c8d6e5;
+  margin: 15px;
+  background-color: #1dd1a1;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.textEntertainment {
+  margin: 0px;
+  padding: 0px;
+}
+
+.EntertainmentH2 {
+  margin: 10px;
+  padding: 0px;
+  font-family: 'Righteous', cursive;
+}
+
+.EntertainmentP {
+  margin: 10px;
+  padding: 0px;
+}
+
+.wrapperEntertainment {
+  padding: 10px;
+}
+
+.EntertainmentImage {
+  width: 120px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
 /* POPUP CSS */
 
 .subscribeLink {
