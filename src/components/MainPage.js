@@ -12,7 +12,7 @@ function MainPage(props) {
 
       <h2 className="headingLayout"> Top News </h2>
         <div className="pattern1 pattern">
-          <div className="imagetelmo">
+          <div className="maincontainerTelmo">
             <div className="telmoinfo">
               <img className="telmoimage" src="https://i.udemycdn.com/user/200_H/12514260_337b.jpg" alt="telmo-image"></img>
               <h2 className="telmoH2">Telmo Sampaio</h2>

@@ -269,6 +269,7 @@ hr {
   overflow: hidden;
   max-height: 100%;
   padding: 10px;
+  border-radius: 5%;
 }
 
 .telmoH2 {
@@ -307,9 +308,10 @@ hr {
 
 .containerGrid {
   display: flex;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 10px 10px;
   align-items: center;
   background-color: #f9ca24;
+  border-radius: 10%;
 }
 
 .telmocss {
@@ -323,6 +325,7 @@ hr {
   padding: 5px;
   font-size: 10px;
   background-color: #f6e58d;
+  border-radius: 0 10% 10% 0; 
 }
 
 .textclass {
@@ -537,6 +540,8 @@ left: 0;
   .maincontainerTelmo {
     max-width: 630px;
     max-height: 237px;
+    margin: auto;
+ 
   }
 
   .textArticle{
