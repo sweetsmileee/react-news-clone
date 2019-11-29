@@ -3,13 +3,13 @@ import Popup from './Popupinner';
 
 
 class App extends Component {  
-
   constructor(props){  
-super(props);  
-this.state = { showPopup: false,
-popUpText: ["Click HERE to suscribe and receive the latest articles", "Thank you for submitting!"] };  
+    super(props);  
+      this.state = { showPopup: false,
+        popUpText: ["Suscribe?", "Thank you!"] 
+    };  
+  }
 
-}  
   toggleWindow(){
     this.setState({
       showWindow: !this.state.Window
@@ -17,9 +17,9 @@ popUpText: ["Click HERE to suscribe and receive the latest articles", "Thank you
   }
 
   togglePopup() {  
-this.setState({  
+    this.setState({  
      showPopup: !this.state.showPopup  
-});  
+  });  
  }  
 
   changePopUp() {
@@ -34,7 +34,7 @@ this.setState({
 
   submitButtonHide() {
     this.setState({
-      submitButton: !this.state.isHiddfen
+      submitButton: !this.state.isHidden
     })
   }
 
@@ -45,24 +45,20 @@ this.setState({
   }
 
   render() {  
-return (  
-<div>  
-  <div className="Title">
-<a onClick={this.togglePopup.bind(this)}><h1 className="subscribeLink"> Click HERE to suscribe and receive the latest articles </h1>  </a>
-  </div>
-
-{this.state.showPopup ?  
-<Popup  
+    return (  
+      <div>  
+        <div className="Title">
+          <a onClick={this.togglePopup.bind(this)}><h1 className="subscribeLink">Subscibe HERE</h1>  </a>
+        </div>
+          {this.state.showPopup ?  
+          <Popup  
           text={this.state.popUpText}  
           closePopup={this.togglePopup.bind(this)}  
-          changePopUp= {() => {this.changePopUp()}}
-/>  
-: null  
-}  
-</div>  
-
-);  
-}  
+          changePopUp= {() => {this.changePopUp()}}/>  
+          : null}  
+      </div>
+    );  
+  }  
 }  
 
 export default App;
