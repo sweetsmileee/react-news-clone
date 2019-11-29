@@ -38,15 +38,14 @@ class Popup extends React.Component {
 
   render() {  
 return (  
-    <div>
         <div className='popup'>  
             <div className='popup\_inner'>
                 <div className="UIText">  
                     <h1>{this.props.text[0]}</h1> 
                 <div className="UIComponents">
-                    <button onClick={this.props.closePopup}>X</button>  
+                    <button className="SubmitButtonX" onClick={this.props.closePopup}>X</button>  
                     <div className="SubmitButton">
-                    <button className={this.checkVis()} onClick={this.hideAndSwap}>Submit Email</button>
+                        <button className={this.checkVis() + "innerPopBtn"} onClick={this.hideAndSwap}>Submit Email</button>
                     </div>
                     <input
                      type="text"
@@ -54,13 +53,9 @@ return (
                     onChange={this.handleChange}/>
                     </div>
                 </div>
-                
             </div>  
         </div> 
-    </div> 
-            );  
-        
-    
+        );
     }  
 }  
 

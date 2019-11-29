@@ -399,7 +399,7 @@ hr {
  background-color: #c8d6e5;
  margin: 15px;
  background-color: #1dd1a1;
- margin: 5px;
+ margin: 10px;
  border-radius: 10px;
 }
 
@@ -427,6 +427,30 @@ hr {
   width: 120px;
   margin: 10px;
   margin-top: 20px;
+}
+
+/* POPUP CSS */
+
+.subscribeLink {
+  display: inline-block;
+  color: white;
+  background-color: crimson;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+/* POPUP INNER */
+
+/* .innerPopBtn {
+  display: inline-block;
+  color: white;
+  background-color: crimson;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px 10px;
 }
 
 /* ========================================================================================================================================*/
