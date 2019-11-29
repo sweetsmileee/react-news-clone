@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Title from './title'
 
 export default function Nav(props) {
     
@@ -31,11 +32,13 @@ export default function Nav(props) {
     
 
     return (
-    <nav className="navBar">
+        <nav className="navBar">
         
         <props.burger /> 
         <input type="text" placeholder={result} onChange={logInput} value={input}></input>
         <a onClick={(e)=>{search(e)}}><div className="searchIcon"><img src={props.SearchIcon} /></div></a>
+        <Title/>
     </nav>
+       
     )
 }

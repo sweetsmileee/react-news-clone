@@ -11,6 +11,7 @@ import Code from './img/code.jpeg';
 import Emails from './img/emails.jpg';
 import './App.css';
 import Popup from './components/Popup.js';
+import Title from './components/title';
 
 function App() {
 
