@@ -510,10 +510,37 @@ left: 0;
 }
 
 @media only screen and (min-width: 740px) {
-  .imagetelmo {
+  .maincontainerTelmo {
     max-width: 630px;
     max-height: 237px;
   }
+
+  .textArticle{
+    max-width: 630px;
+    max-height: 240px;
+    margin: auto;
+  }
+
+  .containerGrid{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9ca24;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .wrapperGrid{
+    width: 60%;
+    margin-right: 10%;
+  }
+
+  .containerHealth{
+    max-width: 630px;
+    max-height: 240px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
 }
 
 
