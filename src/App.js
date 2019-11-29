@@ -74,9 +74,10 @@ const findArticles = (subclass) => {
   return (
     <div className="App">
       <Nav SearchIcon={SearchIcon} burger={Sidebar}/>
-      
-      <div className="banner">
-        <Carousel cards={findArticles} cardArray = {cards}/>
+      <div className="bannerWrap">
+        <div className="banner">
+          <Carousel cards={findArticles} cardArray = {cards}/>
+        </div>
       </div>
       <div className="stories">
           <MainPage cards={findArticles} />

@@ -421,24 +421,70 @@ hr {
 /* MEDIA QUERIES ===========================================================================================================================*/
 
 @media only screen and (min-width: 500px) {
-.banner{
+/* .banner{
   max-width: 500px;
   max-height: 250px;
   margin: auto;
+} */
+.carousel1{
+  max-width: 500px;
+  max-height: 250px;
+  margin: auto;
+  box-shadow: 50px 0 30px 10px rgba(31, 73, 125, 0.8), -50px 0 30px 10px rgba(31, 73, 125, 0.8);
+  z-index: -3;
 }
 
-.arrow {
-
-  top: 20px;
-
+.carousel3,
+.carousel2 {
+  position: fixed;
+  top: 75px;
+  display: inline-flex;
+  z-index: -5;
+  
 }
+
+
+
+.carousel3 a,
+.carousel2 a {
+  display: none;
+}
+
+.carousel2 {
+left: 0;
+}
+
+.carousel3 {
+  right: 0;
+}
+
+.carousel3 img {
+  position: fixed;
+  right: 0;
+  top: 40px;
+  
+}
+
+.carousel2 img {
+  position: fixed;
+  left: 0;
+  top: 40px;
+}
+
+.containerCard .wrapperText,
+.containerCard .image{
+  max-width: 500px;
+}
+
 
 .left {
-  left: 40% ;
+  left: 10vw;
+  top: 60px;
 }
 
 .right {
-  left: 50% ;
+  right: 10vw;
+  top: 60px;
 }
 }
 
