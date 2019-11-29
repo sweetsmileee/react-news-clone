@@ -1,0 +1,72 @@
+.popup{
+    position: fixed;  
+    width: 40%;  
+    height: 20%;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    margin: auto;  
+    background-color: rgba(0,0,0, 0.5);
+    background-color: white;
+    border: solid black 1px;
+    box-shadow: black;
+    -webkit-box-shadow: -3px 4px 22px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 4px 22px -8px rgba(0,0,0,0.75);
+    box-shadow: -3px 4px 22px -8px rgba(0,0,0,0.75);
+    border-radius: 20px;
+}
+
+.popup\_inner {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    height:50%;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px; 
+    background: white;
+    
+}
+
+.close {
+    display: none;
+    color: #aaaaaa;
+    float: right;
+    font-weight: bold;
+    
+}
+
+.subscribeLink{
+    cursor: pointer;
+}
+
+.UIComponents{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+.UIComponents input{
+    width: 60%;
+}
+
+.popUpText{
+    text-align: center;
+}
+
+.UIText{
+    text-align: center;
+}
+
+.Title{
+    text-align: center;
+    text-size-adjust: 20%;
+}
+
+.hide {
+    display: none;
+}
