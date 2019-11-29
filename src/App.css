@@ -556,11 +556,15 @@ left: 0;
     background-color: #f9ca24;
     max-width: 80%;
     margin: auto;
+    border-radius:0;
   }
-  
+
+
+
   .wrapperGrid{
     width: 60%;
     margin-right: 10%;
+    border-radius:0;
   }
 
   .containerHealth{
