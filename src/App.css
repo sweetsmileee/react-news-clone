@@ -255,6 +255,7 @@ hr {
 .telmoimage {
   width: 35%;
   height: 50%;
+  max-width: 200px;
   display: inline;
   float: left;
   margin: 0 6px 3px 0;
@@ -264,7 +265,7 @@ hr {
 .telmoinfo {
   /* display: inline; */
   /* float: right; */
-  background-color: rgb(78, 78, 153);
+  background-color: #1dd1a1;
   color: white;
   overflow: hidden;
   max-height: 100%;
@@ -404,6 +405,10 @@ hr {
  background-color: #1dd1a1;
  margin: 10px;
  border-radius: 10px;
+}
+
+.pattern5{
+  background-color: white;
 }
 
 .textHealth {
@@ -580,7 +585,16 @@ left: 0;
     max-width: 630px;
     max-height: 237px;
     margin: auto;
- 
+    background-color: #1dd1a1;
+  }
+
+  .containerEntertainment {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .textEntertainment {
+    min-width: 60%;
   }
 
   .textArticle{
