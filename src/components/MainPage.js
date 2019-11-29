@@ -1,5 +1,6 @@
 import React from 'react';
 import Block from './Block'
+import Article from './Article'
 
 function MainPage() {
   return (
@@ -16,6 +17,9 @@ function MainPage() {
         </div>
       <h2 className="headingLayout"> Science </h2>
         <div className="pattern2">
+          <Article 
+
+          />
         </div>
       <h2 className="headingLayout"> Technology</h2>
         <div className="pattern3">

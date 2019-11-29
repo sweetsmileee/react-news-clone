@@ -233,6 +233,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+  padding: 20px;
 }
 
 .imagetelmo {
@@ -279,7 +280,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .pattern3{
@@ -344,3 +345,44 @@ hr {
   font-size: 10px;
   margin: 5px 10px;
 }
+
+/* ARTICLE CSS */
+
+/* .containerArticle {
+} */
+
+.textArticle {
+  background-color: #ff6b6b;
+  border-radius: 10%;
+}
+
+.articleH2 {
+  padding: 0px;
+  margin: 5px;
+}
+
+.articleP {
+  padding: 0px;
+  margin: 5px;
+}
+
+.wrapperArticle {
+  margin-top: 10px;
+}
+
+.mybtnArticle {
+  display: inline-block;
+  color: white;
+  background-color: crimson;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.blackholeImage {
+  height: 50%;
+  width: 250px;
+  border-radius: 10%;
+}
+
