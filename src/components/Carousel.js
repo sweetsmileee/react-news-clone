@@ -1,75 +1,55 @@
-import React, { useState } from 'react'
+import React, { Component } from 'react'
 import Left from '../img/leftArrow.png'
 import Right from '../img/rightArrow.png'
-import Bullet from '../img/bullettrain.jpeg'
-import Fuji from '../img/mtfiji.jpeg'
-import NightTime from '../img/nightime.jpeg'
 
 
-export default function Carousel(props) {
-    const [cards, setCards] = useState(
-        [
-            {
-                name: "card1",
-                img: Bullet,
-                title: "Japan's Shinkansen bullet train",
-                info: "Early on October 1, 1964, a sleek blue and white train slid effortlessly across the urban sprawl of Tokyo, its elevated",
-                link: "http://www.bbc.co.uk"
 
-            }, 
-            {
-                name: "card2",
-                img: Fuji,
-                title: `Mt. Fiji, Telmo's Next Goal`,
-                info: "Telmo is embarking on the journey of a lifetime...",
-                link: "https://telmosampaio.com/"
-            },
-            {
-                name: "card3",
-                img: NightTime,
-                title: "Japan's Nightlife",
-                info: "Customer: 'Bring me the wine list and don't get all Saki...'",
-                link: "http://www.bbc.co.uk"
-            }
-        ]
-    )
+export default class Carousel extends Component {
+    state = {
+        featuredCards: this.props.featured("featured"),
+    }
 
-    const prepL = (array) =>{
+
+    prepL = (array) =>{
         return new Promise((resolve)=>{
-            setCards(
-                array
-            )
+        this.setState({
+            featuredCards: array
+        })
             resolve("done")
         })
     }
     
-    const moveLeft = async() => {
-        let newArray = [...cards];
+    moveLeft = async() => {
+        let newArray = [...this.state.featuredCards];
         let moved = newArray.splice(newArray.length-1,1)
         newArray.unshift(moved[0])  
-        await prepL(newArray);
+        await this.prepL(newArray);
     }
 
-    const prepR = (array) =>{
+    prepR = (array) =>{
         return new Promise((resolve)=>{
-            setCards(
-                array
-            )
+            this.setState({
+                featuredCards: array
+            })
             resolve("done")
         })
     }
     
-    const moveRight = async() => {
-        let newArray = [...cards];
+    moveRight = async() => {
+        let newArray = [...this.state.featuredCards];
         let moved = newArray.splice(0,1)
         newArray.push(moved[0])  
-        await prepR(newArray);
+        await this.prepR(newArray);
     }
+
+
+
+    render() {
         
         return (
             <div className="carouselStory">
 
-                {cards.map((item, i)=> {
+                {this.state.featuredCards.map((item, i)=> {
                     return (
                         <div className={"containerCard carousel" + (i+1)}>
                             <img className="image"src={item.img}/>
@@ -82,9 +62,10 @@ export default function Carousel(props) {
                     )
                 }
 
-                <div className="arrow left"><a onClick={moveLeft}><img src={Left}/></a></div>
-                <div className="arrow right"><a onClick={moveRight}><img src={Right}/></a></div>
+                <div className="arrow left"><a onClick={this.moveLeft}><img src={Left}/></a></div>
+                <div className="arrow right"><a onClick={this.moveRight}><img src={Right}/></a></div>
             </div>
         )
+}
 }
 
