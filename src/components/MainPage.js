@@ -21,7 +21,7 @@ function MainPage() {
         <div className="pattern2 pattern">
           <Article 
 
-          />
+
         </div>
       <h2 className="headingLayout"> Technology</h2>
         <div className="pattern3 pattern">
@@ -37,15 +37,10 @@ function MainPage() {
         </div>
       <h2 className="headingLayout"> Health</h2>
         <div className="pattern5 pattern">
-          <Health 
 
-          />
-          <Health 
-
-          />
-          <Health 
-
-          />
+          <Health />
+          <Health />
+          <Health />
         </div>
     </div>
   );
