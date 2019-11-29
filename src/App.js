@@ -5,6 +5,7 @@ import SearchIcon from './img/search.png';
 import MainPage from './components/MainPage'
 import Nav from "./components/Nav";
 import './App.css';
+import Popup from './components/Popup.js';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       </div>
       <div className="stories">
           <MainPage />
+        </div>
+        <div className="subscribetext">
+        <Popup />
         </div>
     </div>
   );
